@@ -1,7 +1,19 @@
 # Create a Rectangle class with readable width and height attributes
 # and a method to calculate its area.
 
+class Rectangle
 
+attr_reader :width, :height
+
+  def initialize(width, height)
+    @height = height
+    @width = width
+  end
+  
+  def area
+    return (@height * @width)
+  end
+end
 
 # Driver code - don't touch anything below this line.
 puts "TESTING the Rectange class..."
